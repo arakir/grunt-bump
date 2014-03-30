@@ -1,8 +1,8 @@
 {
-  "name": "grunt-bump",
+  "name": "grunt-bump-svn",
   "description": "Bump package version",
   "version": "0.0.13",
-  "homepage": "https://github.com/vojtajina/grunt-bump",
+  "homepage": "https://github.com/arakir/grunt-bump-svn",
   "author": {
     "name": "Vojta Jína",
     "email": "vojta.jina@gmail.com"
@@ -26,10 +26,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/vojtajina/grunt-bump.git"
+    "url": "git://github.com/arakir/grunt-bump-svn.git"
   },
   "bugs": {
-    "url": "https://github.com/vojtajina/grunt-bump/issues"
+    "url": "https://github.com/arakir/grunt-bump-svn/issues"
   },
   "main": "tasks/bump.js",
   "engines": {

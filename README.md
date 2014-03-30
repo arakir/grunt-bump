@@ -1,4 +1,4 @@
-# grunt-bump
+# grunt-bump-svn
 
 **Bump package version, create tag, commit, push...**
 
@@ -6,11 +6,11 @@
 
 Install npm package, next to your project's `Gruntfile.js` file:
 
-    npm install grunt-bump --save-dev
+    npm install grunt-bump-svn --save-dev
 
 Add this line to your project's `Gruntfile.js`:
 
-    grunt.loadNpmTasks('grunt-bump');
+    grunt.loadNpmTasks('grunt-bump-svn');
 
 
 ## Usage
