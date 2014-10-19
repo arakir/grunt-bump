@@ -15,6 +15,7 @@
 var semver = require('semver');
 var svn_info = require('svn-info');
 var exec = require('child_process').exec;
+var url = require('url');
 
 module.exports = function(grunt) {
 
@@ -161,6 +162,7 @@ module.exports = function(grunt) {
       var fromUrl = getSvnInfo('url');
       var tagLocation = opts.tagLocation.replace(/\/$/,'');
 
+      tagLocation = url.resolve(fromUrl,tagLocation);
 
       if (!tagLocation) {
         grunt.verbose.writeln('Trying to find tags location from: ' + fromUrl);
