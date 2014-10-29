@@ -162,8 +162,6 @@ module.exports = function(grunt) {
       var fromUrl = getSvnInfo('url');
       var tagLocation = opts.tagLocation.replace(/\/$/,'');
 
-      tagLocation = url.resolve(fromUrl,tagLocation);
-
       if (!tagLocation) {
         grunt.verbose.writeln('Trying to find tags location from: ' + fromUrl);
         ['trunk','branches'].some(function(dir){
@@ -174,6 +172,8 @@ module.exports = function(grunt) {
       }
 
       grunt.verbose.writeln('Resolved tags location: ' + tagLocation);
+      
+      tagLocation = url.resolve(fromUrl,tagLocation);
 
       if (!tagLocation) {
         grunt.fatal('Can not resolve tags location');
